@@ -3,45 +3,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#121212" />
+  <meta name="theme-color" content="#13131F" />
   <link rel="stylesheet" href="/styles/styles.css">
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Petrona&family=Satisfy&display=swap" rel="stylesheet">
   <title>Erik Matheus</title>
 </head>
 <body>
-  <img src="/images/wallpaper.jpg" alt="Wallpaper" class="wallpaper">
   <div id="root">
     <div class="header">
-      <img src="/images/image.jpg" alt="My Picture" class="image">
       <div class="header-container-text">
-        <h1 class="header-text">Erik</h1>
-        <h2 class="header-text">Matheus</h2>
+        <h1 class="header-text">Hi, i am</h1>
+        <h2 class="header-text name">Erik Matheus</h2>
       </div>
+      <img src="/images/image.jpg" alt="My Picture" class="image">
     </div>
     <div class="main">
-      <hr size="5" color="#121212" width="40%">
-      <h2 class="main-title">Redes Sociais</h2>
+      <h2 class="main-title">Follow me⮯</h2>
       <div class="buttons">
-        <div class="button">
+        <div class="button" onclick="mostraAlerta('github')">
           <img class="logo" src="/images/github.png" alt="GitHub Logo">
         </div>
-        <div class="button">
+        <div class="button" onclick="mostraAlerta('linkedin')">
           <img class="logo" src="/images/linkedin.png" alt="Linkedin Logo">
         </div>
-        <div class="button">
+        <div class="button" onclick="mostraAlerta('youtube')">
           <img class="logo" src="/images/youtube.png" alt="YouTube Logo">
         </div>
-        <div class="button">
+        <div class="button" onclick="mostraAlerta('instagram')">
           <img class="logo" src="/images/instagram.png" alt="Instagram Logo">
         </div>
-        <div class="button">
+        <div class="button" onclick="mostraAlerta('whatsapp')">
           <img class="logo" src="/images/whatsapp.png" alt="Whatsapp Logo">
+        </div>
+        <div class="button" onclick="mostraAlerta('tiktok')">
+          <img class="logo d" src="/images/tiktok.png" alt="TikTok Logo">
+        </div>
+        <div class="button" onclick="mostraAlerta('twitter')">
+          <img class="logo d" src="/images/twitter.png" alt="Twitter Logo">
+        </div>
+        <div class="button" onclick="mostraAlerta('facebook')">
+          <img class="logo" src="/images/facebook.png" alt="Facebook Logo">
         </div>
       </div>
     </div>
   </div>
+  <script>
+    function mostraAlerta(i) {
+      switch (i) {
+        case 'github':
+          window.open("https://github.com/erikpervious/", "_blank")
+          break;
+        case 'linkedin':
+          window.open("https://www.linkedin.com/in/erikmatheus/", "_blank")
+          break;
+        case 'youtube':
+          window.open("https://youtube.com/erikpervious", "_blank")
+          break;
+        case 'instagram':
+          window.open("https://instagram.com/erik_pervious", "_blank")
+          break;
+        case 'whatsapp':
+          window.open("https://wa.me/+5533998041133/?text=Vim%20Pelo%20Portfolio", "_blank")
+          break;
+        case 'tiktok':
+          window.open("https://www.tiktok.com/@erik_pervious", "_blank")
+          break;
+        case 'twitter':
+          window.open("https://twitter.com/erikpervious", "_blank")
+          break;
+        case 'facebook':
+          window.open("https://www.facebook.com/profile.php?id=100008415363124", "_blank")
+          break;
+        default:
+          alert('apertou')
+      }
+    };
+  </script>
 </body>
 </html>
