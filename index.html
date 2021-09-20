@@ -17,6 +17,8 @@
       <div class="header-container-text">
         <h1 class="header-text">Hi, i am</h1>
         <h2 class="header-text name">Erik Matheus</h2>
+        <h1 class="header-text-web">Erik Matheus</h1>
+        <h2 class="header-text-web name-web">dev Front End</h1>
       </div>
       <img src="/images/image.jpg" alt="My Picture" class="image">
     </div>
@@ -48,39 +50,38 @@
           <img class="logo" src="/images/facebook.png" alt="Facebook Logo">
         </div>
       </div>
+      <div class="projects">
+        <div class="title-main">
+          <h2 class="project-title">My Projects</h2>
+          <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="project">
+          <div class="container-title">
+            <h2 class="project-title p">Password Generator</h2>
+            <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
+          </div>
+          <p class="project-content">
+            Com o Password Generator você consegue gerar senhas totalmente aleatórias de 
+            uma forma muito simples e fácil. Podendo também editar o que vai ser gerado na 
+            senha, como apenas números, letras ou tudo misturado e também escolher a 
+            quantidade de caracteres.
+          </p>
+        </div>
+        <div class="project">
+          <div class="container-title">
+            <h2 class="project-title p">iClimate</h2>
+            <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
+          </div>
+          <p class="project-content">
+            Com o iClimate é possível identificar o clima e a temperatura na sua 
+            região em tempo real, com uma interface simples e fácil de usar você 
+            consegue também pesquisar dados do tempo em outras cidades acessando 
+            o menu lateral.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <script>
-    function mostraAlerta(i) {
-      switch (i) {
-        case 'github':
-          window.open("https://github.com/erikpervious/", "_blank")
-          break;
-        case 'linkedin':
-          window.open("https://www.linkedin.com/in/erikmatheus/", "_blank")
-          break;
-        case 'youtube':
-          window.open("https://youtube.com/erikpervious", "_blank")
-          break;
-        case 'instagram':
-          window.open("https://instagram.com/erik_pervious", "_blank")
-          break;
-        case 'whatsapp':
-          window.open("https://wa.me/+5533998041133/?text=Vim%20Pelo%20Portfolio", "_blank")
-          break;
-        case 'tiktok':
-          window.open("https://www.tiktok.com/@erik_pervious", "_blank")
-          break;
-        case 'twitter':
-          window.open("https://twitter.com/erikpervious", "_blank")
-          break;
-        case 'facebook':
-          window.open("https://www.facebook.com/profile.php?id=100008415363124", "_blank")
-          break;
-        default:
-          alert('apertou')
-      }
-    };
-  </script>
+  <script src="/script/mod.js"></script>
 </body>
 </html>

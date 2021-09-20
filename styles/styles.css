@@ -4,15 +4,155 @@
   border: 0;
 }
 
+.button:hover {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 581px) {
-
   body {
+    display: flex;
+    justify-content: center;
+    background: #13131F;
+  }
+  #root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  .header-container-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-text {
     display: none;
-  } 
-
+  }
+  .header-text-web {
+    display: flex;
+    content: 'Erik Matheus';
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    text-shadow: #121212 0.3rem 0.3rem 0.2rem;
+    line-height: 2.7rem;
+  }
+  .name-web {
+    display: block;
+    color: #e1e1e1;
+    content: 'dev Front End';
+    font-size: 2rem;
+    font-family: 'Petrona', cursive;
+    padding-left: 3rem;
+  }
+  .image {
+    display: none;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main-title {
+    display: none;
+  }
+  .buttons {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65vw;
+    background: #1C1C26;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 0.6rem 0.6rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .button {
+    padding: 0.7rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.7rem;
+  }
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .d {
+    width: 2.5rem;
+    height: 2rem;
+    padding: 0.3rem 0;
+  }
+  .projects {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 65vw;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  .title-main {
+    display: flex;
+    width: 56vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-main {
+    margin-bottom: 1.5rem;
+  }
+  .project-title {
+    color: #e1e1e1;
+    font-family: 'Petrona', cursive;
+  }
+  .p {
+    color: #FFF;
+  }
+  .open-link-svg {
+    margin: 0 0 0.3rem 0.3rem;
+    color: #FFF;
+  }
+  .project {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65vw;
+    background: #1C1C26;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 0.6rem 0.6rem;
+    border-radius: 0.5rem;
+  }
+  .project-content {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0rem 0.5rem 0.5rem 00.5rem;
+    color: #e1e1e1;
+    font-family: 'Petrona', cursive;
+  }
 }
 
 @media (max-width: 580px) {
+  .header-text-web {
+    display: none;
+  }
   body {
     display: flex;
     justify-content: center;
@@ -95,5 +235,8 @@
     width: 4.5rem;
     height: 4rem;
     padding: 0.3rem 0;
+  }
+  .projects {
+    display: none;
   }
 }
