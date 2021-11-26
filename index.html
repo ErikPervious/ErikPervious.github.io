@@ -3,85 +3,102 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#13131F" />
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#00111C" />
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Petrona&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Petrona&family=Roboto&display=swap" rel="stylesheet">
   <title>Erik Matheus</title>
 </head>
 <body>
-  <div id="root">
-    <div class="header">
-      <div class="header-container-text">
-        <h1 class="header-text">Hi, i am</h1>
-        <h2 class="header-text name">Erik Matheus</h2>
-        <h1 class="header-text-web">Erik Matheus</h1>
-        <h2 class="header-text-web name-web">dev Front End</h1>
+  <header>
+    <div class="line"></div>
+    <h1>ErikPervious</h1>
+    <div class="line"></div>
+  </header>
+  <main>
+    <h2>Políticas de Privacidade</h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="#moneylive">
+            <div class="box-list">
+              <img 
+                src="/src/assets/logo-money-live.png" 
+                alt="logo app money live"
+                class="box-list-logo"
+              >
+              Money Live
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#rastrearencomendas">
+            <div class="box-list">
+              <img 
+                src="/src/assets/logo-rastrear-encomendas.png" 
+                alt="logo app rastrear encomendas"
+                class="box-list-logo"
+              >
+              Rastrear Encomendas
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#blocodenotas">
+            <div class="box-list">
+              <img 
+                src="/src/assets/logo-bloco-de-notas.png" 
+                alt="logo app bloco de notas"
+                class="box-list-logo"
+              >
+              Bloco de Notas
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="box-app" id="moneylive">
+      <div class="box-app-logo-title">
+        <img 
+          src="/src/assets/logo-money-live.png" 
+          alt="logo app money live"
+          class="box-app-logo"
+        >
+        <p class="box-app-title">Money Live</p>
+      </div>  
+      <div class="box-app-description">
+        <iframe src="/src/pages/moneylive.html"></iframe>
       </div>
-      <img src="/images/image.jpg" alt="My Picture" class="image">
-    </div>
-    <div class="main">
-      <h2 class="main-title">Follow me⮯</h2>
-      <div class="buttons">
-        <div class="button" onclick="mostraAlerta('github')">
-          <img class="logo" src="/images/github.png" alt="GitHub Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('linkedin')">
-          <img class="logo" src="/images/linkedin.png" alt="Linkedin Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('youtube')">
-          <img class="logo" src="/images/youtube.png" alt="YouTube Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('instagram')">
-          <img class="logo" src="/images/instagram.png" alt="Instagram Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('whatsapp')">
-          <img class="logo" src="/images/whatsapp.png" alt="Whatsapp Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('tiktok')">
-          <img class="logo d" src="/images/tiktok.png" alt="TikTok Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('twitter')">
-          <img class="logo d" src="/images/twitter.png" alt="Twitter Logo">
-        </div>
-        <div class="button" onclick="mostraAlerta('facebook')">
-          <img class="logo" src="/images/facebook.png" alt="Facebook Logo">
-        </div>
+    </section>
+    <section class="box-app" id="rastrearencomendas">
+      <div class="box-app-logo-title">
+        <img 
+          src="/src/assets/logo-rastrear-encomendas.png" 
+          alt="logo app rastrear encomendas"
+          class="box-app-logo"
+        >
+        <p class="box-app-title">Rastrear Encomendas</p>
+      </div>  
+      <div class="box-app-description">
+        <iframe src="/src/pages/rastrearencomendas.html"></iframe>
       </div>
-      <div class="projects">
-        <div class="title-main">
-          <h2 class="project-title">My Projects</h2>
-          <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
-        </div>
-        <div class="project">
-          <div class="container-title">
-            <h2 class="project-title p">Password Generator</h2>
-            <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
-          </div>
-          <p class="project-content">
-            Com o Password Generator você consegue gerar senhas totalmente aleatórias de 
-            uma forma muito simples e fácil. Podendo também editar o que vai ser gerado na 
-            senha, como apenas números, letras ou tudo misturado e também escolher a 
-            quantidade de caracteres.
-          </p>
-        </div>
-        <div class="project">
-          <div class="container-title">
-            <h2 class="project-title p">iClimate</h2>
-            <object class="open-link-svg" data="/images/open-link.svg" type="image/svg+xml"></object>
-          </div>
-          <p class="project-content">
-            Com o iClimate é possível identificar o clima e a temperatura na sua 
-            região em tempo real, com uma interface simples e fácil de usar você 
-            consegue também pesquisar dados do tempo em outras cidades acessando 
-            o menu lateral.
-          </p>
-        </div>
+    </section>
+    <section class="box-app" id="blocodenotas">
+      <div class="box-app-logo-title">
+        <img 
+          src="/src/assets/logo-bloco-de-notas.png" 
+          alt="logo app bloco de notas"
+          class="box-app-logo"
+        >
+        <p class="box-app-title">Bloco de Notas: Anotações</p>
+      </div>  
+      <div class="box-app-description">
+        <iframe src="/src/pages/blocodenotas.html"></iframe>
       </div>
-    </div>
-  </div>
-  <script src="/script/mod.js"></script>
+    </section>
+  </main>
+  <script src="/src/script/mod.js"></script>
 </body>
 </html>
